@@ -2,6 +2,7 @@ import Image from "next/image"
 import { FaRegHeart } from "react-icons/fa"
 
 import React from 'react'
+import Link from "next/link"
 
 function ShowBookCard() {
     return (
@@ -16,11 +17,11 @@ function ShowBookCard() {
             </div>
             <div className="flex flex-col gap-2">
                 <Image src={'/book.png'} alt='book' height={200} width={200} />
-                <div className="w-[200px] flex flex-col gap-1">
+                <Link href={'/book'} className="w-[200px] flex flex-col gap-1">
                     <h2 className=" text-slate-900 text-base w font-semibold">
                         Java script ES6 complte book
                     </h2>
-                </div>
+                </Link>
             </div>
         </div>
     )

@@ -7,10 +7,10 @@ import React from 'react'
 function BookReview() {
     return (
         <Footerless>
-            <div className="w-full px-36 py-10">
+            <div className="w-full lg:px-36 px-0 lg:py-10 py-0">
                 <div className="w-full flex lg:flex-row flex-col bg-white p-4 rounded-md gap-5">
                     <Image src={'/book.png'} alt='book' width={360} height={360} />
-                    <div className="flex flex-col gap-2 w-[50%]">
+                    <div className="flex flex-col gap-2 lg:w-[50%] w-full">
                         <h2 className="text-lg font-bold text-slate-800">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
                         <div className="flex flex-wrap gap-3 items-center">
                             <p className="text-slate-700 text-base font-medium">234TK</p>
@@ -45,7 +45,7 @@ function BookReview() {
                 </div>
             </div>
 
-            <div className="mx-36 my-5 p-4 flex flex-wrap justify-center items-center gap-2 rounded-md bg-white">
+            <div className="lg:mx-36 mx-0 my-5 lg:p-4 p-0 flex flex-wrap justify-center items-center gap-2 rounded-md bg-white">
                 <div className="w-full">
                     <h2 className="text-base  py-2 text-slate-700 font-bold w-full border-b">Related Books</h2>
                 </div>
